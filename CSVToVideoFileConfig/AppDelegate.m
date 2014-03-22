@@ -42,7 +42,7 @@
                     // Create a result file in the same location
                     //NSLog(@"%@", fileURL.path);
                     NSString *directory = [fileURL.path stringByDeletingLastPathComponent];
-                    NSString *DirectoryPlusFileName = [directory stringByAppendingString:@"/ResultFile.txt"];
+                    NSString *DirectoryPlusFileName = [directory stringByAppendingString:@"/ResultFile.xml"];
                     [[NSFileManager defaultManager] createFileAtPath:DirectoryPlusFileName contents:nil attributes:nil];
                     
                     //NSError *error = nil;
